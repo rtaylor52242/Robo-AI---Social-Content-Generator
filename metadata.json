@@ -1,0 +1,5 @@
+{
+  "name": "Robo AI - Social Content Generator",
+  "description": "An AI-powered application to generate tailored social media posts for multiple platforms from a single idea. It creates platform-specific text and images.",
+  "requestFramePermissions": []
+}
