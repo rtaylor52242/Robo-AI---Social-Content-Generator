@@ -1,5 +1,5 @@
 
-import React, 'react';
+import React from 'react';
 import { useState } from 'react';
 import { Tone, GeneratedPost } from './types';
 import { generateSocialPosts } from './services/geminiService';
@@ -8,11 +8,14 @@ import InputForm from './components/InputForm';
 import PostCard from './components/PostCard';
 import Loader from './components/Loader';
 import ErrorAlert from './components/ErrorAlert';
+import HelpButton from './components/HelpButton';
+import HelpModal from './components/HelpModal';
 
 export default function App() {
   const [generatedPosts, setGeneratedPosts] = useState<GeneratedPost[] | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [isHelpVisible, setIsHelpVisible] = useState<boolean>(false);
 
   const handleGenerate = async (idea: string, tone: Tone) => {
     setIsLoading(true);
@@ -55,6 +58,8 @@ export default function App() {
           </div>
         )}
       </main>
+      <HelpButton onClick={() => setIsHelpVisible(true)} />
+      <HelpModal isVisible={isHelpVisible} onClose={() => setIsHelpVisible(false)} />
     </div>
   );
 }
