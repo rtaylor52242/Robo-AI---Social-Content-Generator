@@ -5,6 +5,17 @@ export enum Tone {
   Urgent = 'Urgent',
   Inspirational = 'Inspirational',
   Casual = 'Casual',
+  Humorous = 'Humorous',
+  Authoritative = 'Authoritative',
+  Empathetic = 'Empathetic',
+  Storytelling = 'Storytelling',
+  Educational = 'Educational',
+  Minimalist = 'Minimalist',
+  Playful = 'Playful',
+  Bold = 'Bold',
+  Mysterious = 'Mysterious',
+  Luxurious = 'Luxurious',
+  Nostalgic = 'Nostalgic',
 }
 
 export enum SocialPlatform {

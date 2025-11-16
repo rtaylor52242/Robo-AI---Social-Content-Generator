@@ -1,7 +1,24 @@
 import React from 'react';
 import { Tone, SocialPlatform } from './types';
 
-export const TONES: Tone[] = [Tone.Professional, Tone.Witty, Tone.Urgent, Tone.Inspirational, Tone.Casual];
+export const TONES: Tone[] = [
+  Tone.Professional,
+  Tone.Witty,
+  Tone.Urgent,
+  Tone.Inspirational,
+  Tone.Casual,
+  Tone.Humorous,
+  Tone.Authoritative,
+  Tone.Empathetic,
+  Tone.Storytelling,
+  Tone.Educational,
+  Tone.Minimalist,
+  Tone.Playful,
+  Tone.Bold,
+  Tone.Mysterious,
+  Tone.Luxurious,
+  Tone.Nostalgic,
+];
 
 export const PLATFORMS: SocialPlatform[] = [SocialPlatform.LinkedIn, SocialPlatform.Twitter, SocialPlatform.Instagram];
 
