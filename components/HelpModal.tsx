@@ -44,9 +44,9 @@ export default function HelpModal({ isVisible, onClose }: HelpModalProps) {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-light-text text-lg mb-1">Step 2: Choose a Tone</h3>
+            <h3 className="font-semibold text-light-text text-lg mb-1">Step 2: Choose Your Tones</h3>
             <p>
-              Select one of the tone buttons that best fits the mood you want to convey. The AI will adapt its writing style based on your choice, from 'Professional' for a formal audience to 'Witty' for more engaging content.
+              Select up to three tones that best fit the mood you want to convey. The AI will blend these tones and adapt its writing style based on your choices, from 'Professional' for a formal audience to 'Witty' for more engaging content.
             </p>
           </div>
           <div>
